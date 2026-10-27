@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Syntax, manifest and strings
+        run: node scripts/check.mjs
+      - name: Package
+        run: |
+          version=$(node -p "require('./extension/manifest.json').version")
+          (cd extension && zip -qr "../darkhub-vault-$version.zip" .)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: darkhub-vault
+          path: darkhub-vault-*.zip

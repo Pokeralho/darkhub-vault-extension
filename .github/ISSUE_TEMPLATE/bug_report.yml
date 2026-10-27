@@ -1,0 +1,62 @@
+name: Bug report
+description: The extension does not work as expected
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Security vulnerabilities go through the [security policy](https://github.com/Pokeralho/darkhub-vault-extension/security/policy), not here.
+        Never paste passwords or vault contents into an issue.
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      description: chrome://extensions or about:addons (for example 0.2.0)
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: "Chrome 141 / Edge 141 / Firefox 144"
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: DarkHub Suite version
+      placeholder: "0.7.3"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Pairing
+        - Popup (list, fill)
+        - Inline icon on login fields
+        - Saving a new or changed login
+        - Messages / translation
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: Site where it happens (if any)
+      description: Only the address of the login page, for example https://example.com/login
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened and what you expected
+      description: Steps to reproduce, what you saw (a screenshot of the popup helps), what should have happened.
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Errors from the extension (optional)
+      description: chrome://extensions → DarkHub Vault → "Errors" or the service worker console. Remove any personal data.
+      render: text
