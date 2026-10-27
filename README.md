@@ -21,9 +21,7 @@
 </p>
 
 <p align="center">
-  <img src="./docs/assets/popup.png" width="300" alt="DarkHub Vault popup listing two logins for github.com" />
-  &nbsp;
-  <img src="./docs/assets/pairing.png" width="262" alt="Pairing code shown one digit per box" />
+  <img src="./docs/assets/popup.png" width="720" alt="DarkHub Vault popup: logins for github.com with Fill buttons, and the pairing code shown one digit per box" />
 </p>
 
 ---

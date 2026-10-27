@@ -21,9 +21,7 @@
 </p>
 
 <p align="center">
-  <img src="./docs/assets/popup.png" width="300" alt="Popup do DarkHub Vault com dois logins para github.com" />
-  &nbsp;
-  <img src="./docs/assets/pairing.png" width="262" alt="Código de pareamento, um dígito por caixa" />
+  <img src="./docs/assets/popup.pt-BR.png" width="720" alt="Popup do DarkHub Vault: logins de github.com com o botão Preencher, e o código de pareamento com um dígito por caixa" />
 </p>
 
 ---
