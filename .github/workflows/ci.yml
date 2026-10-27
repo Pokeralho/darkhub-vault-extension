@@ -27,7 +27,7 @@ jobs:
         run: |
           version=$(node -p "require('./extension/manifest.json').version")
           (cd extension && zip -qr "../darkhub-vault-$version.zip" .)
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: darkhub-vault
           path: darkhub-vault-*.zip
