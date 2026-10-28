@@ -130,6 +130,10 @@ tests in `tests/vaultBridge.test.ts`.
 | `content.js` | Finds login forms, inline icon and picker, fills fields, notices submitted logins |
 | `popup.html` / `popup.css` / `popup.js` | The toolbar popup |
 
+## Privacy
+
+Nothing is collected or sent anywhere: see [PRIVACY.md](./PRIVACY.md).
+
 ## Contributing
 
 Bug reports, translations and pull requests are welcome: read [CONTRIBUTING.md](./.github/CONTRIBUTING.md).

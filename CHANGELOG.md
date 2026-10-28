@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-10-28
+
+### Added
+- `data_collection_permissions: none` for Firefox Add-ons, which now asks every new extension to declare it.
+- Privacy policy (PRIVACY.md) and a store kit (docs/STORES.md, images in docs/store) for the Chrome Web Store, Edge
+  Add-ons and Firefox Add-ons.
+
 ## [0.2.0] - 2026-10-27
 
 ### Added
